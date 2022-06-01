@@ -1,4 +1,4 @@
-mport axios from "axios";
+import axios from "axios";
 import configurations from "../../assets/configurations";
 import authentication from "../authentication/authentication";
 const profileUrl = configurations.profile_url;
