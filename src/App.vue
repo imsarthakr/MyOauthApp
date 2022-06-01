@@ -1,8 +1,6 @@
 <template>
   <div id="app" style="overflow:hidden">
     <div>
-      <!-- <img alt="Vue logo" height="30px" src="./assets/logo.png" /> -->
-      <!-- <br /> -->
       <div id="nav">
         <img alt="Vue logo" id="imgLogo" height="30px" src="./assets/logo.png" />
         <router-link to="/" class="navLink">Home</router-link>
