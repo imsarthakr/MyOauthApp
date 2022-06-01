@@ -1,13 +1,13 @@
-import axios from "axios";
+mport axios from "axios";
 import configurations from "../../assets/configurations";
 import authentication from "../authentication/authentication";
-const userInfoUrl = configurations.profile_url;
+const profileUrl = configurations.profile_url;
 export default {
   getProfile: () => {
     let token = authentication.getSessionToken();
     return new Promise((resolve, reject) => {
       axios
-        .get(userInfoUrl, {
+        .get(profileUrl, {
           headers: {
             Authorization: `token ${token}`,
           },
