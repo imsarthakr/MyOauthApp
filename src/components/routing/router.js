@@ -1,4 +1,4 @@
-import auth from "../authentication/authentication";
+import authentication from "../authentication/authentication";
 export default [
   {
     path: "/",
@@ -15,7 +15,7 @@ export default [
     name: "repositories",
     component: () => import(`@/components/Repositories.vue`),
     beforeEnter: (to, from, next) => {
-      if (auth.isLoggedIn()) next();
+      if (authentication.isLoggedIn()) next();
       else next({ path: "/unauthorized" });
     },
   },
@@ -24,7 +24,7 @@ export default [
     name: "profile",
     component: () => import(`@/components/Profile.vue`),
     beforeEnter: (to, from, next) => {
-      if (auth.isLoggedIn()) next();
+      if (authentication.isLoggedIn()) next();
       else next({ path: "/unauthorized" });
     },
   },
@@ -34,7 +34,7 @@ export default [
     name: "followers",
     component: () => import(`@/components/Followers.vue`),
     beforeEnter: (to, from, next) => {
-      if (auth.isLoggedIn()) next();
+      if (authentication.isLoggedIn()) next();
       else next({ path: "/unauthorized" });
     },
   },
@@ -43,7 +43,7 @@ export default [
     name: "following",
     component: () => import(`@/components/Following.vue`),
     beforeEnter: (to, from, next) => {
-      if (auth.isLoggedIn()) next();
+      if (authentication.isLoggedIn()) next();
       else next({ path: "/unauthorized" });
     },
   },
