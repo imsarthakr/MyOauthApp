@@ -2,7 +2,7 @@
   <div id="app" style="overflow:hidden">
     <div>
       <div id="nav">
-        <img alt="Vue logo" id="imgLogo" height="30px" src="./assets/logo.png" />
+        <img alt="Github logo" id="imgLogo" height="30px" src="./assets/logo.png" />
         <router-link to="/" class="navLink">Home</router-link>
         <router-link to="/repositories" class="navLink">Repositories</router-link>
         <router-link to="/profile" class="navLink">Profile</router-link>
