@@ -1,12 +1,11 @@
 import axios from "axios";
 import configurations from "../../assets/configurations";
-const accessUrl = configurations.access_token_url;
-const corsUrl = configurations.cors_url;
+const accessTokenUrl = configurations.cors_url + configurations.access_token_url;
 export default {
   getAccessToken: (data) => {
     return new Promise((resolve, reject) => {
       axios
-        .post(`${corsUrl}${accessUrl}`, data, {
+        .post(accessTokenUrl, data, {
           headers: {
             Accept: "application/json",
           },
